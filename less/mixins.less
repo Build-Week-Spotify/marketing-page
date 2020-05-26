@@ -4,3 +4,16 @@
 	display: ~"-ms-@{display}"; // IE11
 	display: @display;
 }
+
+.button(@padding-top-bottom, @padding-right-left, @font-size) {
+	padding: @padding-top-bottom @padding-right-left;
+	border-radius: 100px;
+	border: none;
+	font-size: @font-size;
+	text-transform: uppercase;
+	font-weight: 700;
+	background: @primary-green;
+	color: @snow;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
