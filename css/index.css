@@ -137,26 +137,23 @@ a {
 html {
   font-family: 'Source Sans Pro', sans-serif;
 }
-header {
+nav {
   background: #111111;
-  height: 60vh;
+  padding: 2% 0;
+  color: #FFFFFF;
 }
-.header-wrapper {
+.nav-wrapper {
   width: 60%;
   margin: 0 auto;
-  height: 100%;
-}
-.header-wrapper nav {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: -ms-flex;
   display: flex;
   justify-content: flex-end;
+  flex-direction: row;
   align-items: center;
-  padding: 3% 0;
-  color: #FFFFFF;
 }
-.header-wrapper nav a {
+.nav-wrapper a {
   font-size: 1rem;
   color: #FFFFFF;
   margin-left: 0.5%;
@@ -164,45 +161,49 @@ header {
   border-radius: 5px;
   transition: background 80ms ease;
 }
-.header-wrapper nav a:hover {
+.nav-wrapper a:hover {
   background: #222222;
 }
-.header-wrapper nav a:nth-child(3),
-.header-wrapper nav a:nth-child(4) {
+.nav-wrapper a:nth-child(3),
+.nav-wrapper a:nth-child(4) {
   color: #CCCCCC;
 }
-.header-wrapper nav a:nth-child(3):hover,
-.header-wrapper nav a:nth-child(4):hover {
+.nav-wrapper a:nth-child(3):hover,
+.nav-wrapper a:nth-child(4):hover {
   color: #FFFFFF;
 }
-.header-wrapper nav span {
+.nav-wrapper span {
   margin-left: 0.5%;
 }
-.header-wrapper .hero {
-  min-height: 80%;
+header {
+  background: #111111;
+  height: 60vh;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: -ms-flex;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
-.header-wrapper .hero .hero-wrapper h1 {
+.hero-wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+.hero-wrapper h1 {
   font-size: 4.4rem;
   font-weight: 700;
   color: #FFFFFF;
   line-height: 1.1;
   letter-spacing: 1.5px;
 }
-.header-wrapper .hero .hero-wrapper p {
+.hero-wrapper p {
   font-size: 2rem;
   line-height: 1.4;
   color: #FFFFFF;
   margin: 3% 0 8% 0;
   letter-spacing: 1px;
 }
-.header-wrapper .hero .hero-wrapper button {
-  padding: 4% 10%;
+.hero-wrapper button {
+  padding: 2% 5%;
   border-radius: 100px;
   border: none;
   font-size: 1rem;
@@ -213,10 +214,10 @@ header {
   letter-spacing: 1px;
   cursor: pointer;
 }
-.top-playlists-wrapper {
+.top-playlists {
   width: 60%;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 .top-playlists-wrapper h2 {
   font-size: 3.4rem;
@@ -255,12 +256,17 @@ header {
   font-size: 1.2rem;
 }
 .reviews {
-  margin-top: 5%;
-}
-.reviews-wrapper {
   width: 60%;
   margin: 0 auto;
-  padding-top: 5%;
+  margin-top: 8%;
+}
+.reviews-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .reviews-wrapper h2 {
   font-size: 3.4rem;
@@ -271,4 +277,17 @@ header {
   margin-top: 2%;
   line-height: 1.5;
   width: 60%;
+}
+.reviews-wrapper button {
+  padding: 2% 5%;
+  border-radius: 100px;
+  border: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #6CD46E;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 5%;
 }

@@ -1,0 +1,39 @@
+nav {
+  background: @primary-black;
+  padding: 2% 0;
+  color: @snow;
+}
+
+.nav-wrapper {
+  width: 60%;
+  margin: 0 auto;
+  .flex-display();
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+
+  a {
+    font-size: 1rem;
+    color: @snow;
+    margin-left: 0.5%;
+    padding: 1% 1.5%;
+    border-radius: 5px;
+    transition: background 80ms ease;
+  }
+
+  a:hover {
+    background: #222222;
+  }
+
+  a:nth-child(3), a:nth-child(4) {
+    color: #CCCCCC;
+  }
+
+  a:nth-child(3):hover, a:nth-child(4):hover {
+    color: @snow;
+  }
+
+  span {
+    margin-left: 0.5%;
+  }
+}
