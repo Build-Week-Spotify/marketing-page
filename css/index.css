@@ -167,7 +167,7 @@ nav {
 }
 .nav-wrapper a:nth-child(3),
 .nav-wrapper a:nth-child(4) {
-  color: #CCCCCC;
+  color: #EEEEEE;
 }
 .nav-wrapper a:nth-child(3):hover,
 .nav-wrapper a:nth-child(4):hover {
@@ -214,6 +214,37 @@ header {
   color: #FFFFFF;
   letter-spacing: 1px;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.hero-wrapper button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 80px;
+  background: #6CD46E;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  transition: all 0.15s ease-in;
+  z-index: -1;
+}
+.hero-wrapper button:before {
+  content: ' \2192';
+  font-size: 1rem;
+  position: absolute;
+  right: 30px;
+  opacity: 0;
+  transition: all 0.15s ease-in;
+}
+.hero-wrapper button:hover:before {
+  opacity: 1;
+  right: 5px;
+}
+.hero-wrapper button:hover:after {
+  right: -20px;
+  opacity: 1;
 }
 .top-playlists {
   width: 60%;
@@ -226,9 +257,9 @@ header {
 }
 .top-playlists-wrapper p {
   font-size: 1.4rem;
-  margin-top: 2%;
   line-height: 1.5;
   width: 60%;
+  margin-top: 2%;
 }
 .top-playlists-wrapper .playlists {
   margin-top: 5%;
@@ -266,9 +297,9 @@ header {
 }
 .our-team-wrapper p {
   font-size: 1.4rem;
-  margin-top: 2%;
   line-height: 1.5;
   width: 60%;
+  margin-top: 2%;
 }
 .our-team-wrapper .teammates {
   margin-top: 5%;
@@ -295,7 +326,7 @@ header {
   color: #111111;
 }
 .our-team-wrapper .teammate a:hover {
-  color: #6CD46E;
+  color: #444444;
 }
 .our-team-wrapper .teammate p {
   font-size: 1rem;

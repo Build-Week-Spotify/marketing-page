@@ -10,8 +10,7 @@ header {
   padding: 7% 0;;
 
   h1 {
-    font-size: 4.4rem;
-    font-weight: 700;
+    .heading-1();
     color: @snow;
     line-height: 1.1;
     letter-spacing: 1.5px;
@@ -27,5 +26,41 @@ header {
 
   button {
     .button(2%, 5%, 1rem);
+    position: relative;
+    z-index: 1;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 80px;
+      background: @primary-green;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+
+      transition: all .15s ease-in;
+      z-index: -1;
+    }
+
+    &:before {
+      content: ' \2192';
+      font-size: 1rem;
+      position: absolute;
+      right: 30px;
+      opacity: 0;
+      transition: all .15s ease-in;
+    }
+
+    &:hover:before {
+      opacity: 1;
+      right: 5px;
+    }
+
+    &:hover:after {
+      right: -20px;
+      opacity: 1;
+    }
   }
 }
