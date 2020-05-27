@@ -268,7 +268,7 @@ header {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 700;
-  background: #6CD46E;
+  background: #1DB954;
   color: #FFFFFF;
   letter-spacing: 1px;
   cursor: pointer;
@@ -283,7 +283,7 @@ header {
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 700;
-    background: #6CD46E;
+    background: #1DB954;
     color: #FFFFFF;
     letter-spacing: 1px;
     cursor: pointer;
@@ -301,7 +301,7 @@ header {
   right: 0;
   bottom: 0;
   width: 50%;
-  background: #6CD46E;
+  background: #1DB954;
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
   transition: all 0.1s ease-in;
@@ -556,7 +556,7 @@ footer {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 700;
-  background: #6CD46E;
+  background: #1DB954;
   color: #FFFFFF;
   letter-spacing: 1px;
   cursor: pointer;
@@ -570,7 +570,7 @@ footer {
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 700;
-    background: #6CD46E;
+    background: #1DB954;
     color: #FFFFFF;
     letter-spacing: 1px;
     cursor: pointer;
@@ -584,7 +584,7 @@ footer {
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 700;
-    background: #6CD46E;
+    background: #1DB954;
     color: #FFFFFF;
     letter-spacing: 1px;
     cursor: pointer;
