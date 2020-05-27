@@ -1,0 +1,45 @@
+footer {
+  margin-top: 8%;
+  height: 40vh;
+  background: @primary-black;
+  padding: 5% 0;
+}
+
+.footer-wrapper {
+  width: 60%;
+  margin: 0 auto;
+  .flex-display();
+  justify-content: space-between;
+
+  .footer-section {
+    width: 25%;
+    .flex-display();
+    flex-direction: column;
+
+    h3 {
+      font-size: 2rem;
+      color: @snow;
+      line-height: 1.2;
+      font-weight: 600;
+      margin-bottom: 10%;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.4;
+      color: @snow;
+    }
+
+    a {
+      display: block;
+      font-size: 1.2rem;
+      margin: 2% 0;
+      color: @snow;
+    }
+
+    button {
+      .button(6%, 0, 1rem);
+      margin-top: 15%;
+    }
+  }
+}

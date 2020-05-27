@@ -240,46 +240,63 @@ header {
   flex-wrap: wrap;
 }
 .top-playlists-wrapper .playlists .playlist {
-  margin-top: 2%;
+  margin-top: 3%;
   width: 21%;
 }
 .top-playlists-wrapper .playlists .playlist .playlist-box {
-  height: 200px;
-  background: #CCCCCC;
-  border-radius: 5px;
+  height: 210px;
+  background: #EEEEEE;
+  border-radius: 8px;
 }
 .top-playlists-wrapper .playlists .playlist a {
   display: block;
-  text-align: center;
-  margin-top: 5%;
+  margin: 5% 0 0 5%;
   color: #111111;
   font-size: 1.2rem;
 }
-.reviews {
+footer {
+  margin-top: 8%;
+  height: 40vh;
+  background: #111111;
+  padding: 5% 0;
+}
+.footer-wrapper {
   width: 60%;
   margin: 0 auto;
-  margin-top: 8%;
-}
-.reviews-wrapper {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: -ms-flex;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-between;
 }
-.reviews-wrapper h2 {
-  font-size: 3.4rem;
+.footer-wrapper .footer-section {
+  width: 25%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+}
+.footer-wrapper .footer-section h3 {
+  font-size: 2rem;
+  color: #FFFFFF;
+  line-height: 1.2;
   font-weight: 600;
+  margin-bottom: 10%;
 }
-.reviews-wrapper p {
-  font-size: 1.4rem;
-  margin-top: 2%;
-  line-height: 1.5;
-  width: 60%;
+.footer-wrapper .footer-section p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #FFFFFF;
 }
-.reviews-wrapper button {
-  padding: 2% 5%;
+.footer-wrapper .footer-section a {
+  display: block;
+  font-size: 1.2rem;
+  margin: 2% 0;
+  color: #FFFFFF;
+}
+.footer-wrapper .footer-section button {
+  padding: 6% 0;
   border-radius: 100px;
   border: none;
   font-size: 1rem;
@@ -289,5 +306,5 @@ header {
   color: #FFFFFF;
   letter-spacing: 1px;
   cursor: pointer;
-  margin-top: 5%;
+  margin-top: 15%;
 }
