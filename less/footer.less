@@ -1,6 +1,5 @@
 footer {
   margin-top: 8%;
-  height: 40vh;
   background: @primary-black;
   padding: 5% 0;
 }
@@ -11,10 +10,24 @@ footer {
   .flex-display();
   justify-content: space-between;
 
+  @media @tablet {
+    width: 80%;
+  }
+
+  @media @phone {
+    flex-direction: column;
+  }
+
   .footer-section {
     width: 25%;
     .flex-display();
     flex-direction: column;
+
+    @media @phone {
+      width: 100%;
+      margin-bottom: 15%;
+      align-items: center;
+    }
 
     h3 {
       font-size: 2rem;
@@ -23,14 +36,23 @@ footer {
       font-weight: 600;
       margin-bottom: 10%;
     }
+
     .footer-header {
       font-size: 1.4rem;
+
+      @media @phone {
+        margin-bottom: 4%;
+      }
     }
 
     p {
       font-size: 1.2rem;
       line-height: 1.4;
       color: @snow;
+
+      @media @phone {
+        text-align: center;
+      }
     }
 
     a {
@@ -38,11 +60,28 @@ footer {
       font-size: 1.2rem;
       margin: 2% 0;
       color: @snow;
+
+      @media @tablet {
+        margin: 4% 0;
+      }
+
+      @media @phone {
+        margin: 2% 0;
+      }
     }
 
     button {
       .button(6%, 0, 1rem);
       margin-top: 15%;
+
+      @media @tablet {
+        .button(7%, 0, 1rem)
+      }
+
+      @media @phone {
+        .button(5%, 0, 1rem);
+        width: 100%;
+      }
     }
   }
 }

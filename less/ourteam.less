@@ -3,6 +3,10 @@
   margin: 0 auto;
   margin-top: 5%;
 
+  @media @tablet {
+    width: 80%;
+  }
+
   h2 {
     .heading-2();
   }
@@ -10,6 +14,10 @@
   p {
     .paragraph();
     margin-top: 2%;
+
+    @media @tablet {
+      .paragraph(@width: 100%);
+    }
   }
 
   .teammates {
@@ -23,6 +31,15 @@
   .teammate {
     margin-top: 3%;
     width: 21%;
+
+    @media @tablet {
+      width: 26%;
+    }
+
+    @media @phone {
+      width: 44%;
+      margin-top: 5%;
+    }
 
     img {
       width: 100%;

@@ -13,6 +13,12 @@ nav {
   border-bottom: 1px solid #222222;
   padding: 2% 0;
 
+  @media @tablet {
+    width: 80%;
+    justify-content: center;
+    padding: 3% 0;
+  }
+
   a {
     font-size: 1rem;
     color: @snow;
@@ -20,6 +26,17 @@ nav {
     padding: 1% 1.5%;
     border-radius: 5px;
     transition: background 80ms ease;
+
+    @media @phone {
+      text-align: center;
+      width: 100%;
+      padding: 3% 0;
+      flex-direction: column;
+    }
+
+    @media @tablet {
+      margin-left: 2%;
+    }
   }
 
   a:hover {
@@ -36,5 +53,13 @@ nav {
 
   span {
     margin-left: 0.5%;
+
+    @media @phone {
+      display: none;
+    }
+
+    @media @tablet {
+      margin-left: 2%;
+    }
   }
 }

@@ -2,17 +2,30 @@
   width: 60%;
   margin: 0 auto;
   margin-top: 5%;
+
+  @media @tablet {
+    width: 80%;
+  }
 }
 
 .top-playlists-wrapper {
 
   h2 {
     .heading-2();
+
+    @media @tablet {
+      .heading-2(@font-size: 2.8rem);
+    }
   }
 
   p {
     .paragraph();
     margin-top: 2%;
+
+    @media @tablet {
+      .paragraph(@width: 100%);
+      margin-top: 4%;
+    }
   }
 
   .playlists {
@@ -25,6 +38,11 @@
     .playlist {
       margin-top: 3%;
       width: 21%;
+
+      @media @tablet {
+        width: 45%;
+        margin-top: 5%;
+      }
 
       .playlist-box {
         height: 210px;

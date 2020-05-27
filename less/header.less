@@ -9,19 +9,40 @@ header {
   margin: 0 auto;
   padding: 7% 0;;
 
+  @media @tablet {
+    width: 80%;
+  }
+
   h1 {
     .heading-1();
     color: @snow;
     line-height: 1.1;
     letter-spacing: 1.5px;
+
+    @media @tablet {
+      .heading-1(@font-size: 3.4rem);
+    }
+
+    @media @phone {
+      .heading-1(@font-size: 2.8rem);
+    }
   }
 
   p {
     font-size: 2rem;
     line-height: 1.4;
     color: @snow;
-    margin: 3% 0 8% 0;
+    margin: 3% 0 6% 0;
     letter-spacing: 1px;
+
+    @media @tablet {
+      font-size: 1.6rem;
+      margin: 5% 0 10% 0;
+    }
+
+    @media @phone {
+      font-size: 1.4rem;
+    }
   }
 
   button {
@@ -29,38 +50,53 @@ header {
     position: relative;
     z-index: 1;
 
+    @media @tablet {
+      .button(4%, 8%, 1rem);
+    }
+
+    @media @phone {
+      width: 100%;
+    }
+
     &:after {
       content: "";
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
-      width: 80px;
+      width: 50%;
       background: @primary-green;
       border-top-right-radius: 100px;
       border-bottom-right-radius: 100px;
-
-      transition: all .15s ease-in;
+      transition: all .1s ease-in;
       z-index: -1;
+
+      @media @phone {
+        display: none;
+      }
     }
 
     &:before {
       content: ' \2192';
-      font-size: 1rem;
       position: absolute;
-      right: 30px;
+      right: 15%;
+      font-size: 1rem;
       opacity: 0;
-      transition: all .15s ease-in;
+      transition: all .1s ease-in;
+
+      @media @phone {
+        display: none;
+      }
     }
 
     &:hover:before {
       opacity: 1;
-      right: 5px;
+      right: 2%;
     }
 
     &:hover:after {
-      right: -20px;
       opacity: 1;
+      right: -10%;
     }
   }
 }
