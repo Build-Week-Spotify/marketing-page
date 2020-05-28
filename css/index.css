@@ -151,7 +151,7 @@ nav {
   justify-content: flex-end;
   align-items: center;
   border-bottom: 1px solid #222222;
-  padding: 2% 0;
+  padding: 30px 0;
 }
 @media (max-width: 800px) {
   .nav-wrapper {
@@ -271,6 +271,7 @@ header {
   color: #FFFFFF;
   letter-spacing: 1px;
   cursor: pointer;
+  outline: none;
   position: relative;
   z-index: 1;
 }
@@ -286,6 +287,7 @@ header {
     color: #FFFFFF;
     letter-spacing: 1px;
     cursor: pointer;
+    outline: none;
   }
 }
 @media (max-width: 500px) {
@@ -393,7 +395,7 @@ header {
 }
 .top-playlists-wrapper .playlists .playlist a {
   display: block;
-  margin: 5% 0 0 5%;
+  margin: 5% 0 0 0;
   color: #111111;
   font-size: 1.2rem;
 }
@@ -558,6 +560,7 @@ footer {
   color: #FFFFFF;
   letter-spacing: 1px;
   cursor: pointer;
+  outline: none;
   margin-top: 15%;
 }
 @media (max-width: 800px) {
@@ -572,6 +575,7 @@ footer {
     color: #FFFFFF;
     letter-spacing: 1px;
     cursor: pointer;
+    outline: none;
   }
 }
 @media (max-width: 500px) {
@@ -586,6 +590,7 @@ footer {
     color: #FFFFFF;
     letter-spacing: 1px;
     cursor: pointer;
+    outline: none;
     width: 100%;
   }
 }
