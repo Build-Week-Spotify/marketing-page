@@ -261,7 +261,7 @@ header {
   }
 }
 .hero-wrapper button {
-  padding: 2% 5%;
+  padding: 20px 50px;
   border-radius: 100px;
   border: none;
   font-size: 1rem;
@@ -369,7 +369,7 @@ header {
   }
 }
 .top-playlists-wrapper .playlists {
-  margin-top: 5%;
+  margin-top: 2%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: -ms-flex;
