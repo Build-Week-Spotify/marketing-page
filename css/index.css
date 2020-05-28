@@ -149,7 +149,6 @@ nav {
   display: -ms-flex;
   display: flex;
   justify-content: flex-end;
-  flex-direction: row;
   align-items: center;
   border-bottom: 1px solid #222222;
   padding: 2% 0;
@@ -164,8 +163,8 @@ nav {
 .nav-wrapper a {
   font-size: 1rem;
   color: #FFFFFF;
-  margin-left: 0.5%;
-  padding: 1% 1.5%;
+  margin-left: 1%;
+  padding: 9px 11px;
   border-radius: 5px;
   transition: background 80ms ease;
 }
@@ -194,7 +193,7 @@ nav {
   color: #FFFFFF;
 }
 .nav-wrapper span {
-  margin-left: 0.5%;
+  margin-left: 1%;
 }
 @media (max-width: 500px) {
   .nav-wrapper span {
@@ -431,9 +430,8 @@ header {
   display: -ms-flexbox;
   display: -ms-flex;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .our-team-wrapper .teammate {
   margin-top: 3%;
