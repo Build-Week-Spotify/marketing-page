@@ -384,9 +384,9 @@ header {
   }
 }
 .top-playlists-wrapper .playlists .playlist .playlist-box {
-  height: 210px;
   background: #EEEEEE;
   border-radius: 8px;
+  width: 100%;
 }
 .top-playlists-wrapper .playlists .playlist a {
   display: block;
@@ -432,7 +432,7 @@ header {
 }
 .our-team-wrapper .teammate {
   margin-top: 3%;
-  width: 21%;
+  width: 17%;
 }
 @media (max-width: 800px) {
   .our-team-wrapper .teammate {

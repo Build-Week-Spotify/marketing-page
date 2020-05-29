@@ -18,7 +18,6 @@ function createPlaylist(imageUrl, nameOfPlaylist) {
 }
 
 axios.get(`https://spotify-3-ds.herokuapp.com/dummy_data`).then(response => {
-  console.log(response);
 
   response.data.forEach(function(data) {
     const newPlaylist = createPlaylist(data.album_art, data.album_name);
