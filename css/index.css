@@ -181,14 +181,9 @@ nav {
     margin-left: 2%;
   }
 }
-.nav-wrapper a:hover {
-  background: #222222;
-}
-.nav-wrapper a:nth-child(3),
 .nav-wrapper a:nth-child(4) {
-  color: #EEEEEE;
+  color: #CCCCCC;
 }
-.nav-wrapper a:nth-child(3):hover,
 .nav-wrapper a:nth-child(4):hover {
   color: #FFFFFF;
 }
